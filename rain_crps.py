@@ -1,7 +1,7 @@
 thresholds = np.arange(70)
 
 def heavyside(actual):
-    return thresholds > actual
+    return thresholds >= actual
 
 def is_cdf_valid(case):
     if case[0] < 0 or case[0] > 1:
